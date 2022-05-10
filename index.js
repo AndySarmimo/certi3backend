@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 require('./routes')(app, databaseService());
 
 
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
     console.log('app listeng');
 
 });
