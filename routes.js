@@ -101,7 +101,7 @@ module.exports = function(app, databaseService) {
     });
 
     
-    app.delete('/deck/:idDeck',(req,res)=>{
+    app.delete('/deleteDeck/:idDeck',(req,res)=>{
       
         databaseService.deleteDeck(req.params.idDeck)
         .then(()=>{
