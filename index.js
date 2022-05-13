@@ -15,6 +15,6 @@ require('./routes')(app, databaseService());
 
 
 app.listen(process.env.PORT, function(){
-    console.log('app listeng');
+    console.log('app listening on port', process.env.PORT , 'in DB:', process.env.DB);
 
 });
